@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-y: hidden;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+  background-image: url(../assets/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pump-container img{
+    width: 270px;
+}   
+.pump{
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    z-index: 1;
+    transition: 0.250s ease;
+}
+
+.handel{
+    position: absolute;
+    bottom: 145px;
+    right: 10px;
+    transition: 0.250s ease;
+}
+
+.peak{
+    position: absolute;
+    bottom: 20px;
+    right: 159px;
+    transition: 0.250s ease;
+}
+
+.ballon-container{
+    width: 400px;
+    height: 800px;
+    height: auto;
+    position: absolute;
+    bottom: 75px;
+    right: 58px;
+    transition: 10s;
+    cursor: pointer;
+}
+
+.ballon-image{
+    position: absolute;
+    bottom: 150px;
+    height: 0px;
+    width: 200px;
+   transition: 0.5s ease-out;
+}
+.letter-image{
+    position: absolute;
+    z-index: 1;
+    bottom: 200px;
+    left: 38px;
+    width: 125px;  
+    display: none;
+    transition: 0.5s ease-out;
+}
+.rope-image{
+    width: 200px;
+    position: absolute;
+    bottom: 35px;
+    display: none;
+    transition: 0.5s ease-out;
+}
+
+/* @keyframes flyBallon {
+    from{
+        transform: translate(0);
+    }
+    to{
+       transform: translate(-1000px,-340px);
+    }
+} */
